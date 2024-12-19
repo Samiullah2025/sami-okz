@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - SAMI ULLAH OKZ</title>
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="ProfilePage.css">
+</head>
+
+<body class="bg-[#F9F5F2] font-roboto text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-gray-900 p-5 text-center shadow-md relative">
+        <nav>
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-xl font-bold">Portfolio</a>
+
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="md:hidden text-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+
+                <ul class="hidden md:flex justify-center space-x-10 text-lg font-medium">
+                    <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                    <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                    <li><a href="GalleryPage.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                    <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                    <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                    <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                    <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu -->
+                <ul class="absolute top-16 left-0 w-full bg-gray-800 text-white text-center hidden md:hidden"
+                    id="mobile-menu">
+                    <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                    <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                    <li><a href="GalleryPage.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                    <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                    <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                    <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                    <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile py-20 text-center">
+        <div class="container mx-auto">
+            <!-- Profile Picture -->
+            <div class="relative inline-block">
+                <img src="images/profile3.jpeg" alt="SAMI ULLAH" class="mx-auto rounded-full profile-picture">
+                <!-- Gradient Overlay -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-20 rounded-full">
+                </div>
+            </div>
+
+            <!-- Name -->
+            <h1 class="text-5xl font-bold text-gray-800 mt-6 profile-name">SAMI ULLAH OKZ</h1>
+
+            <!-- Info Boxes -->
+            <div class="flex flex-col md:flex-row justify-around mt-12">
+                <!-- Introduction Box -->
+                <div class="bg-white p-8 rounded-lg shadow-lg max-w-xs md:max-w-sm w-full mb-6 md:mb-0 intro-box">
+                    <h2 class="text-2xl font-semibold mb-4">Introduction</h2>
+                    <img src="images/Intro.png" class="h-12 w-12 mb-4 text-gray-600 mx-auto" alt="Introduction Icon">
+                    <p class="text-gray-600">Hi, I'm SAMI, a software engineer passionate about building
+                        innovative solutions that solve real-world problems. My expertise lies in developing web and
+                        mobile applications with a focus on user experience and performance.</p>
+                </div>
+
+                <!-- Education Box -->
+                <div class="bg-white p-8 rounded-lg shadow-lg max-w-xs md:max-w-sm w-full mb-6 md:mb-0 education-box">
+                    <h2 class="text-2xl font-semibold mb-4">Education</h2>
+                    <img src="images/education.png" class="h-12 w-12 mb-4 text-gray-600 mx-auto" alt="Education Icon">
+                    <p class="text-gray-600">I hold a degree in Computer Science with a focus on software development.
+                        My academic journey has provided me with a strong foundation in computer science principles and
+                        hands-on experience with various technologies.</p>
+                </div>
+
+                <!-- Background Box -->
+                <div class="bg-white p-8 rounded-lg shadow-lg max-w-xs md:max-w-sm w-full background-box">
+                    <h2 class="text-2xl font-semibold mb-4">Background</h2>
+                    <img src="images/skills.png" class="h-12 w-12 mb-4 text-gray-600 mx-auto" alt="Background Icon">
+                    <p class="text-gray-600">With experience in various projects and roles, I have honed my skills in
+                        software engineering, project management, and collaborative teamwork. I am always eager to learn
+                        and adapt to new challenges in the tech industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center mb-4">
+                <a href="#" class="mx-3 text-gray-400 hover:text-white">
+                    <img src="images/linkedin.png" class="h-6 w-6" alt="LinkedIn">
+                </a>
+                <a href="#" class="mx-3 text-gray-400 hover:text-white">
+                    <img src="images/instagram.png" class="h-6 w-6" alt="Instagram">
+                </a>
+                <a href="#" class="mx-3 text-gray-400 hover:text-white bg-white">
+                    <img   src="images/github.png" class="h-6 w-6" alt="Twitter">
+                </a>
+            </div>
+            <p>&copy; 2024 SAMI ULLAH. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

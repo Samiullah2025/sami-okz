@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9F5F2;
+    color: #333;
+}
+
+.skill-item {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    background-color: #f0f0f0;
+}
+
+.star-rating {
+    font-size: 24px;
+    color: #ffd700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #222;
+    font-weight: bold;
+}
+
+h3 {
+    color: #444;
+}
+
+p {
+    color: #666;
+}

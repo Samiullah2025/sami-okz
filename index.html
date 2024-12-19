@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Projects</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="ProjectPage.css">
+</head>
+
+<body class="bg-[#F9F5F2] font-roboto text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-gray-900 p-5 text-center shadow-md relative">
+        <nav>
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-xl font-bold">Portfolio</a>
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="md:hidden text-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+                <ul class="hidden md:flex justify-center space-x-10 text-lg font-medium">
+                    <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                    <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                    <li><a href="GalleryPage.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                    <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                    <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                    <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                    <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects px-10 py-20">
+        <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">Latest Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="images/logo4.png" alt="Project 1" class="project-image">
+                <h3 class="project-title">Expence Manager App</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam repellendus, harum cum rerum non, blanditiis fuga nobis fugiat voluptatibus voluptas exercitationem perspiciatis nulla aliquid, consequuntur vero esse atque optio?</p>
+                <div class="project-tech-stack flex justify-center space-x-4 mt-3">
+                    <img src="images/android.png" alt="Android Studio" class="tech-logo">
+                    <img src="images/java.png" alt="Java" class="tech-logo">
+                    <img src="images/xml_5747080.png" alt="XML" class="tech-logo">
+                </div>
+            <div class="project-links mt-4 flex justify-between items-center">
+                <a href="#" class="project-link flex items-center">
+                    <img src="images/github.png" alt="GitHub" class="icon mr-2"> GitHub
+                </a>
+                <a href="#" class="project-link flex items-center">
+                    <img src="images/icons8-play-100.png" alt="Live Demo" class="icon mr-2"> Live Demo
+                </a>
+            </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="images/logo2.jpg" alt="Project 2" class="project-image">
+                <h3 class="project-title">Brick Breaker Game</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex consequuntur ratione error minima, aliquid corrupti consectetur, ullam provident magnam, distinctio molestiae corporis quo blanditiis eos! Quia deserunt distinctio aut?.</p>
+                <div class="project-tech-stack flex justify-center space-x-4 mt-3">
+                    <img src="images/android.png" alt="Android Studio" class="tech-logo">
+                    <img src="images/java.png" alt="Java" class="tech-logo">
+                    <img src="images/xml_5747080.png" alt="XML" class="tech-logo">
+                </div>
+                <div class="project-links mt-4 flex justify-between items-center">
+                    <a href="#" class="project-link flex items-center">
+                        <img src="images/github.png" alt="GitHub" class="icon mr-2"> GitHub
+                    </a>
+                    <a href="#" class="project-link flex items-center">
+                        <img src="images/icons8-play-100.png" alt="Live Demo" class="icon mr-2"> Live Demo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/logo3.png" alt="Project 3" class="project-image">
+                <h3 class="project-title">Ecommerce Web App</h3>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt deserunt, repudiandae porro pariatur laboriosam quae a esse, eius recusandae, cupiditate ducimus modi dolor ea ratione placeat molestiae eum. Iure.</p>
+                <div class="project-tech-stack flex justify-center space-x-4 mt-3">
+                    <img src="images/asp.jpeg" alt="ASP.NET" class="tech-logo">
+                    <img src="images/c-sharp_6132221.png" alt="C#" class="tech-logo">
+                    <img src="images/windows_13170416.png" alt="Visual Studio" class="tech-logo">
+                </div>
+                <div class="project-links mt-4 flex justify-between items-center">
+                    <a href="#" class="project-link flex items-center">
+                        <img src="images/github.png" alt="GitHub" class="icon mr-2"> GitHub
+                    </a>
+                    <a href="#" class="project-link flex items-center">
+                        <img src="images/icons8-play-100.png" alt="Live Demo" class="icon mr-2"> Live Demo
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

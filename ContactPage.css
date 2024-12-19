@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9F5F2;
+}
+
+/* Navigation Menu */
+header {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffafcc;
+}
+
+/* Contact Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffafcc;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+}

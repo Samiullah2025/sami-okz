@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- Tailwind CSS for layout and responsiveness -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS for gallery styles -->
+    <link rel="stylesheet" href="GalleryPage.css">
+</head>
+
+<body class="bg-[#F9F5F2] font-roboto text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-gray-900 p-5 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-bold">Portfolio</a>
+            <ul class="hidden md:flex justify-center space-x-10 text-lg font-medium">
+                <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                <li><a href="GalleryPage.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="container mx-auto my-16 px-4 lg:px-8">
+        <h2 class="text-center text-4xl font-bold mb-12">My Gallery</h2>
+
+        <!-- Photo Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Image 1 -->
+            <div class="gallery-item relative">
+                <details class="group">
+                    <summary class="cursor-pointer relative">
+                        <img src="images/logo1.png" alt="Project 1" class="fixed-size-img rounded-lg shadow-lg">
+                        <div
+                            class="caption absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-2 text-center text-white rounded-b-lg">
+                            <p>Project 1: App Development</p>
+                        </div>
+                    </summary>
+                    <div class="description hidden bg-gray-100 p-4 rounded-lg shadow-md mt-4">
+                        <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint nesciunt facere repellendus repellat vero aperiam, accusamus sunt voluptate in expedita harum similique! Neque tenetur eius repellat dolor sequi qui.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="gallery-item relative">
+                <details class="group">
+                    <summary class="cursor-pointer relative">
+                        <img src="images/logo2.jpg" alt="Photography" class="fixed-size-img rounded-lg shadow-lg">
+                        <div
+                            class="caption absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-2 text-center text-white rounded-b-lg">
+                            <p>Photography</p>
+                        </div>
+                    </summary>
+                    <div class="description hidden bg-gray-100 p-4 rounded-lg shadow-md mt-4">
+                        <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sapiente atque necessitatibus saepe autem unde praesentium exercitationem debitis aliquam dignissimos dolor doloribus nemo recusandae neque, commodi explicabo culpa. Molestiae, rerum!</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="gallery-item relative">
+                <details class="group">
+                    <summary class="cursor-pointer relative">
+                        <img src="images/logo3.png" alt="Creative Work" class="fixed-size-img rounded-lg shadow-lg">
+                        <div
+                            class="caption absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-2 text-center text-white rounded-b-lg">
+                            <p>Creative Design</p>
+                        </div>
+                    </summary>
+                    <div class="description hidden bg-gray-100 p-4 rounded-lg shadow-md mt-4">
+                        <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti hic assumenda animi ipsam unde a exercitationem sed quidem ullam incidunt, praesentium quae nam rerum laboriosam architecto eaque sint ab vel!.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="gallery-item relative">
+                <details class="group">
+                    <summary class="cursor-pointer relative">
+                        <img src="images/logo4.png" alt="Nature Photography"
+                            class="fixed-size-img rounded-lg shadow-lg">
+                        <div
+                            class="caption absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-2 text-center text-white rounded-b-lg">
+                            <p>Nature Photography</p>
+                        </div>
+                    </summary>
+                    <div class="description hidden bg-gray-100 p-4 rounded-lg shadow-md mt-4">
+                        <p class="text-sm text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At iste, minima dolore asperiores ipsa expedita pariatur ratione, ducimus ullam, ea rerum nemo eaque. Doloribus cupiditate assumenda, pariatur atque optio odio?.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

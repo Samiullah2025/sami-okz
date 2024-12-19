@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+
+<body class="bg-[#F9F5F2] font-roboto text-gray-900">
+
+ 
+    <header class="bg-gray-900 p-5 text-center shadow-md relative">
+        <nav>
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-xl font-bold">Portfolio</a>
+
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="md:hidden text-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+
+                <ul class="hidden md:flex justify-center space-x-10 text-lg font-medium">
+                    <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                    <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                    <li><a href="GalleryPage.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                    <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                    <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                    <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                    <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+
+               
+                <ul class="absolute top-16 left-0 w-full bg-gray-800 text-white text-center hidden md:hidden"
+                    id="mobile-menu">
+                    <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                    <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                    <li><a href="GalleryPage.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                    <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                    <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                    <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                    <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section class="intro flex flex-col md:flex-row justify-between items-center px-10 py-20">
+        <div class="left max-w-xl slide-up">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">Hi, I’m Web & Mobile Developer.</h1>
+            <h2 class="text-3xl text-gray-600 mb-6">My Name is SAMI</h2>
+            <p class="text-lg text-gray-500 mb-8">
+                Passionate about crafting software solutions that enhance user experiences. I help businesses grow
+                through innovation, insightful design, and technical expertise.
+            </p>
+            <a href="#"
+                class="px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300 ease-in-out">Get
+                in Touch</a>
+        </div>
+
+        <div class="right mt-10 md:mt-0 fade-in">
+            <img src="Images/profile2.png" alt="Junaid Jamshid" class="rounded-lg shadow-xl max-w-xs md:max-w-sm lg:max-w-md">
+        </div>
+    </section>
+
+</body>
+
+</html>

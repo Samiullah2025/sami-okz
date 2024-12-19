@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Skills.css">
+</head>
+
+<body class="bg-[#F9F5F2] font-roboto text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-gray-900 p-5 text-center shadow-md">
+        <nav>
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-xl font-bold">Portfolio</a>
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="md:hidden text-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+                <ul class="hidden md:flex justify-center space-x-10 text-lg font-medium">
+                <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                <li><a href="gallery.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+                <!-- Mobile Menu -->
+                <ul class="absolute top-16 left-0 w-full bg-gray-800 text-white text-center hidden md:hidden"
+                    id="mobile-menu">
+                    <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                    <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                    <li><a href="gallery.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                    <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                    <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                    <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                    <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto my-16 px-4 lg:px-8">
+        <h2 class="text-center text-4xl font-bold mb-8">My Skills</h2>
+        <p class="text-center text-xl mb-12">Explore my skills with ratings!</p>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
+            <!-- Skill 1 -->
+            <div class="skill-item bg-white shadow-lg rounded-lg p-8 hover:bg-gray-100 transition">
+                <img src="Images/coding.png" alt="Creative Direction" class="w-24 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-4">Mobile App Development</h3>
+                <p class="mb-6">Leading communication design, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit reprehenderit ipsum officia inventore doloremque amet animi hic neque labore a ad nemo repudiandae accusantium quasi ab temporibus, voluptate facere magnam.
+                </p>
+                <!-- Star Rating -->
+                <div class="star-rating text-yellow-500 mb-6">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-item bg-white shadow-lg rounded-lg p-8 hover:bg-gray-100 transition">
+                <img src="/Images/web-programming.png" alt="Graphic Design" class="w-24 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                <p class="mb-6">The art of problem-solving. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos quo aspernatur voluptatibus et provident ipsam adipisci. Pariatur deleniti quasi quidem ipsa earum enim, fuga illo ipsam cupiditate. Amet, magni corrupti.</p>
+                <!-- Star Rating -->
+                <div class="star-rating text-yellow-500 mb-6">
+                    <span>⭐⭐⭐⭐</span>
+                </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-item bg-white shadow-lg rounded-lg p-8 hover:bg-gray-100 transition">
+                <img src="/Images/front-end-programming.png" alt="Experience Design" class="w-24 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-4">UI/UX</h3>
+                <p class="mb-6">Focus on the quality of user experience Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nulla modi ipsa harum inventore delectus blanditiis recusandae, magnam maiores eveniet quos quas cupiditate itaque corporis, totam magni sint quo ipsum.</p>
+                <!-- Star Rating -->
+                <div class="star-rating text-yellow-500 mb-6">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-item bg-white shadow-lg rounded-lg p-8 hover:bg-gray-100 transition">
+                <img src="/Images/3d.png" alt="Photography" class="w-24 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-4">Softwre Design and Architecture</h3>
+                <p class="mb-6">Capturing life one snap Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit unde explicabo sunt. Molestiae delectus esse praesentium voluptatem dolorem inventore nisi omnis ea officia tempore incidunt commodi unde velit, sunt pariatur?</p>
+                <!-- Star Rating -->
+                <div class="star-rating text-yellow-500 mb-6">
+                    <span>⭐⭐⭐</span>
+                </div>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="skill-item bg-white shadow-lg rounded-lg p-8 hover:bg-gray-100 transition">
+                <img src="/Images/microchip.png" alt="Video Production" class="w-24 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-4">AI/ML</h3>
+                <p class="mb-6">Conceptualizing and storytelling Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure assumenda neque aspernatur placeat aut, at deleniti iste vel eligendi totam sint earum perspiciatis soluta rem dicta sed corrupti reprehenderit laborum?</p>
+                <!-- Star Rating -->
+                <div class="star-rating text-yellow-500 mb-6">
+                    <span>⭐⭐⭐⭐</span>
+                </div>
+            </div>
+
+            <!-- Skill 6 -->
+            <div class="skill-item bg-white shadow-lg rounded-lg p-8 hover:bg-gray-100 transition">
+                <img src="/Images/problem-solving.png" alt="Sense of Humor" class="w-24 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-4">Problem Solving</h3>
+                <p class="mb-6">Providing laughter and amusement Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non saepe, incidunt dignissimos hic fugiat quas ipsa mollitia esse numquam earum distinctio, vitae repudiandae laudantium tempora illo et quod ab.</p>
+                <!-- Star Rating -->
+                <div class="star-rating text-yellow-500 mb-6">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

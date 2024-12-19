@@ -1,0 +1,105 @@
+/* Custom Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards ease-in-out;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1.5s forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Styles */
+body {
+    background-color: #F9F5F2;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Button Hover Effect */
+a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Navigation Bar Styling */
+header {
+    position: relative;
+}
+
+#menu-toggle:checked~#mobile-menu {
+    display: block;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    display: none;
+    transition: max-height 0.3s ease;
+}
+
+/* Media Queries for Responsive Design */
+/* Mobile (up to 640px) */
+@media (max-width: 640px) {
+    #mobile-menu {
+        display: none;
+    }
+}
+
+/* Tablet (641px – 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .intro {
+        padding: 2em;
+    }
+
+    .left h1 {
+        font-size: 2.5em;
+    }
+
+    .left h2 {
+        font-size: 2em;
+    }
+
+    .left p {
+        font-size: 1em;
+    }
+
+    .right img {
+        max-width: 80%;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    .intro {
+        padding: 5em 10%;
+    }
+
+    .left h1 {
+        font-size: 4em;
+    }
+
+    .left h2 {
+        font-size: 3em;
+    }
+
+    .left p {
+        font-size: 1.2em;
+    }
+
+    .right img {
+        max-width: 100%;
+    }
+}

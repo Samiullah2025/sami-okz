@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="ContactPage.css">
+</head>
+
+<body class="bg-[#F9F5F2] font-roboto text-gray-900">
+
+    <!-- Navigation -->
+    <header class="bg-gray-900 p-5 text-center shadow-md relative">
+        <nav>
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-xl font-bold">Portfolio</a>
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="md:hidden text-white cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </label>
+                <ul class="hidden md:flex justify-center space-x-10 text-lg font-medium">
+                <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                <li><a href="GalleryPage.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+                <!-- Mobile Menu -->
+                <ul class="absolute top-16 left-0 w-full bg-gray-800 text-white text-center hidden md:hidden"
+                    id="mobile-menu">
+                    <li><a href="HomePage.html" class="text-white hover:text-gray-400 transition">Home</a></li>
+                    <li><a href="ProfilePage.html" class="text-white hover:text-gray-400 transition">Profile</a></li>
+                    <li><a href="GalleryPage.html" class="text-white hover:text-gray-400 transition">Gallery</a></li>
+                    <li><a href="Carrer.html" class="text-white hover:text-gray-400 transition">Career</a></li>
+                    <li><a href="ProjectPage.html" class="text-white hover:text-gray-400 transition">Projects</a></li>
+                    <li><a href="Skills.html" class="text-white hover:text-gray-400 transition">Skills</a></li>
+                    <li><a href="ContactPage.html" class="text-white hover:text-gray-400 transition">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto my-16 px-4 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Inquiry Form -->
+            <div class="bg-white p-8 shadow-lg rounded-lg">
+                <h2 class="text-3xl font-bold mb-8">Online Inquiry</h2>
+                <form action="#">
+                    <div class="mb-4">
+                        <input type="text" name="name" placeholder="Name"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="email" placeholder="Email"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="tel" name="phone" placeholder="Phone"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500">
+                    </div>
+                    <div class="mb-4">
+                        <select name="interest"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500">
+                            <option>Select An Interest</option>
+                            <option>General Inquiry</option>
+                            <option>Support</option>
+                            <option>Feedback</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <textarea name="message" rows="4" placeholder="Message"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-500"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-gray-900 text-white p-4 rounded-lg hover:bg-gray-700">Submit</button>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h2 class="text-3xl font-bold mb-8">Contact Details</h2>
+                <p class="mb-4">samikhan9312770@gmail.com</p>
+                <p class="mb-8">+8613058783317</p>
+                <h3 class="text-xl font-semibold">CHINA</h3>
+                <p class="mb-4">Taizhou<br>Linhai, zhejiang</p>
+                <h3 class="text-xl font-semibold">University</h3>
+                <p class="mb-4">Taizhou university china</p>
+           
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

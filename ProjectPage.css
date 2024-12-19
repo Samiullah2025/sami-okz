@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Project Section */
+.projects {
+    background-color: #fff7f0;
+    border-top: 2px solid #ffafcc;
+    border-bottom: 2px solid #ffafcc;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    font-size: 2.25rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: #ffafcc;
+    bottom: -10px;
+    left: 25%;
+}
+
+/* Project Card Styles */
+.project-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.project-image:hover {
+    opacity: 0.8;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.project-description {
+    color: #555;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Tech Stack Section */
+.project-tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.tech-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.project-link i {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.project-link:hover i {
+    color: #ffafcc;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .projects {
+        text-align: left;
+    }
+}
+
+
+/* Project Links */
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.project-link {
+    font-size: 1.25rem;
+    /* Increase font size if needed */
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #ffafcc;
+}
+
+.project-link .icon {
+    width: 24px;
+    /* Adjust size as per your icon */
+    height: 24px;
+    margin-right: 8px;
+    /* Spacing between icon and text */
+}
+
+.project-links .project-link:last-child {
+    text-align: right;
+}
